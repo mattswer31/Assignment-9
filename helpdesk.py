@@ -24,4 +24,10 @@ def update_ticket(helpdesk, ticket_id):
 def display_tickets(helpdesk):
     for ticket in helpdesk:
         current = helpdesk[ticket]
-        print(f"{ticket}:\nName: {current["Customer"]}\nIssue: {current["Issue"]}\nStatus: {current["Status"]}\n")
+        if current["Status"] == "open":
+            print(f"{ticket}:\nName: {current["Customer"]}\nIssue: {current["Issue"]}\nStatus: {current["Status"]}\n")
+    for ticket in helpdesk:
+        current = helpdesk[ticket]
+        if current["Status"] == "closed":
+            print(f"{ticket}:\nName: {current["Customer"]}\nIssue: {current["Issue"]}\nStatus: {current["Status"]}\n")
+

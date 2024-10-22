@@ -1,3 +1,4 @@
+# import helpdesk functions
 import helpdesk
 
 # pre-initialized ticket list
@@ -8,6 +9,7 @@ tickets_list = {
 
 print(f"Welcome to Matt's HelpDesk!")
 print(f"Input '1' to open a ticket\nInput '2' to update a ticket\nInput '3' to display all tickets\nInput '4' to close this program")
+
 # while loop to control user input
 while True:
     choice = input("Enter choice: ")
